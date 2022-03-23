@@ -61,7 +61,7 @@ function jogar(){
     let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
     let tagHtml = "<div id='opcoes' class='carta-status'>";
     let atributosMaquina="";
-        for (let atributo in cartas[cartaMaquina].atributos){ //laço for each para mostrar os atributos da maquina apos clicar em jogar
+        for (let atributo in cartas[cartaMaquina].atributos){ //laço for each para mostrar os atributos da carta-maquina apos clicar em jogar
             atributosMaquina += "<p type='text' name='atributo' value='"+atributo+"'> " + atributo + " " + cartas[cartaMaquina].atributos[atributo]+"</p>";
         }
     nomeMaquina = `<p class="carta-subtitle">${cartas[cartaMaquina].nome}</p>`;
